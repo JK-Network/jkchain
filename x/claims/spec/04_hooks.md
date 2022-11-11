@@ -24,7 +24,7 @@ The user votes on a Governance proposal using their Evmos account. Once the vote
 
 ## Staking Hook - Delegate Action
 
-The user delegates their EVMOS tokens to a validator. Once the tokens are staked, the claimable amount corresponding to the delegate action is transferred to the user address:
+The user delegates their JK tokens to a validator. Once the tokens are staked, the claimable amount corresponding to the delegate action is transferred to the user address:
 
 1. The user submits a `MsgDelegate`.
 2. Begin claiming process for the `ActionDelegate`.

@@ -6,7 +6,7 @@ order: 1
 
 ## Rektdrop
 
-The Evmos [Rektdrop](https://evmos.blog/the-evmos-rektdrop-abbe931ba823) is the genesis airdrop for the EVMOS token to Cosmos Hub, Osmosis and Ethereum users.
+The Evmos [Rektdrop](https://evmos.blog/the-evmos-rektdrop-abbe931ba823) is the genesis airdrop for the JK token to Cosmos Hub, Osmosis and Ethereum users.
 
 > The end goal of Evmos is to bring together the Cosmos and Ethereum community and thus the Rektdrop has been designed to reward past participation in both networks under this theme of “getting rekt”.
 
@@ -68,7 +68,7 @@ As described in the [Action](#action) section, a user must submit transactions t
 
 ### Ethereum Users
 
-Evmos shares the coin type (`60`) and key derivation (Ethereum `secp256k1`) with Ethereum. This allows users (EOA accounts) that have been allocated EVMOS tokens to directly claim their tokens using their preferred web3 wallet.
+Evmos shares the coin type (`60`) and key derivation (Ethereum `secp256k1`) with Ethereum. This allows users (EOA accounts) that have been allocated JK tokens to directly claim their tokens using their preferred web3 wallet.
 
 ### Cosmos Hub and Osmosis Users
 

@@ -4,7 +4,7 @@ order: 2
 
 # Hooks
 
-The `x/recovery` module allows for state transitions that return IBC tokens that were previously transferred to EVMOS back to the source chains into the source accounts with the `Keeper.OnRecvPacket` callback. The source chain must be authorized.
+The `x/recovery` module allows for state transitions that return IBC tokens that were previously transferred to JK back to the source chains into the source accounts with the `Keeper.OnRecvPacket` callback. The source chain must be authorized.
 
 ## Withdraw
 

@@ -199,7 +199,7 @@ hermes keys restore cosmoshub-4 -m "24-word mnemonic seed"
 hermes keys restore evmos_9001-2 -m "24-word mnemonic seed"
 ```
 
-Ensure this wallet has funds in both EVMOS and ATOM in order to pay the fees required to relay.
+Ensure this wallet has funds in both JK and ATOM in order to pay the fees required to relay.
 
 ## Final Checks
 

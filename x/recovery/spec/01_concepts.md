@@ -49,7 +49,7 @@ After the initial Evmos launch (`v1.1.2`), tokens got stuck from accounts with a
     **Consequences**
 
     - IBC vouchers  from IBC transfer got stuck in the receiver’s balance
-    - IBC Transfer Action was claimed and the EVMOS rewards were transferred to the receiver’s Evmos `secp256k1` account, resulting in stuck EVMOS tokens.
+    - IBC Transfer Action was claimed and the JK rewards were transferred to the receiver’s Evmos `secp256k1` account, resulting in stuck JK tokens.
     - Claims record of the sender was migrated to the receiver’s Evmos `secp256k1` account
 
     **Recovery procedure**

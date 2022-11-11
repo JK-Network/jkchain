@@ -53,7 +53,7 @@ Great! However, remember that governance proposals potentially impact many stake
 
 ### Are you ready to draft a governance proposal?
 
-There will likely be differences of opinion about the value of what you're proposing to do and the strategy by which you're planning to do it. If you've considered feedback from broad perspectives and think that what you're doing is valuable and that your strategy should work, and you believe that others feel this way as well, it's likely worth drafting a proposal. However, remember that the largest EVMOS stakers have the biggest vote, so a vocal minority isn't necessarily representative or predictive of the outcome of an on-chain vote.
+There will likely be differences of opinion about the value of what you're proposing to do and the strategy by which you're planning to do it. If you've considered feedback from broad perspectives and think that what you're doing is valuable and that your strategy should work, and you believe that others feel this way as well, it's likely worth drafting a proposal. However, remember that the largest JK stakers have the biggest vote, so a vocal minority isn't necessarily representative or predictive of the outcome of an on-chain vote.
 
 A conservative approach is to have some confidence that you roughly have initial support from a majority of the voting power before proceeding to drafting your proposal. However, there are likely other approaches, and if your idea is important enough, you may want to pursue it regardless of whether or not you are confident that the voting power will support it.
 
@@ -102,7 +102,7 @@ Assume that many people will stop reading at this point. However, it is importan
      - voters should understand the value of what you're providing in a simple way
    - your reasons for selecting this plan
    - your motivation for delivering this solution/value
-4. Funding - amount and denomination proposed eg. 5000 EVMOS
+4. Funding - amount and denomination proposed eg. 5000 JK
    - the entity controlling the account receiving the funding
    - consider an itemized breakdown of funding per major deliverable
    - consider outlining how the funds will be spent
@@ -187,11 +187,11 @@ See the [submitting guide](./submitting.md) for more on submitting proposals.
 
 ### The Deposit Period
 
-The deposit period currently lasts 3 days. If you submitted your transaction with the minimum deposit (192 EVMOS), your proposal will immediately enter the voting period. If you didn't submit the minimum deposit amount (currently 192 EVMOS), then this may be an opportunity for others to show their support by contributing (and risking) their EVMOS as a bond for your proposal. You can request contributions openly and also contact stakeholders directly (particularly stakeholders who are enthusiastic about your proposal). Remember that each contributor is risking their funds, and you can [read more about the conditions for burning deposits here](./process.md#burned-deposits).
+The deposit period currently lasts 3 days. If you submitted your transaction with the minimum deposit (192 JK), your proposal will immediately enter the voting period. If you didn't submit the minimum deposit amount (currently 192 JK), then this may be an opportunity for others to show their support by contributing (and risking) their JK as a bond for your proposal. You can request contributions openly and also contact stakeholders directly (particularly stakeholders who are enthusiastic about your proposal). Remember that each contributor is risking their funds, and you can [read more about the conditions for burning deposits here](./process.md#burned-deposits).
 
 This is a stage where proposals may begin to get broader attention. Most popular explorers currently display proposals that are in the deposit period, but due to proposal spamming, this may change.
 
-A large cross-section of the blockchain/cryptocurrency community exists on Twitter. Having your proposal in the deposit period is a good time to engage the Evmos community to prepare validators to vote and EVMOS-holders that are staking.
+A large cross-section of the blockchain/cryptocurrency community exists on Twitter. Having your proposal in the deposit period is a good time to engage the Evmos community to prepare validators to vote and JK-holders that are staking.
 
 ### The Voting Period
 

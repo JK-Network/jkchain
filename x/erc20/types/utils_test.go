@@ -62,7 +62,7 @@ func TestEqualMetadata(t *testing.T) {
 				Base:        "ajk",
 				Display:     "evmos",
 				Name:        "Evmos",
-				Symbol:      "EVMOS",
+				Symbol:      "JK",
 				Description: "EVM, staking and governance denom of Evmos",
 				DenomUnits: []*banktypes.DenomUnit{
 					{
@@ -80,7 +80,7 @@ func TestEqualMetadata(t *testing.T) {
 				Base:        "ajk",
 				Display:     "evmos",
 				Name:        "Evmos",
-				Symbol:      "EVMOS",
+				Symbol:      "JK",
 				Description: "EVM, staking and governance denom of Evmos",
 				DenomUnits: []*banktypes.DenomUnit{
 					{
@@ -112,7 +112,7 @@ func TestEqualMetadata(t *testing.T) {
 				Base:        "ajk",
 				Display:     "evmos",
 				Name:        "Evmos",
-				Symbol:      "EVMOS",
+				Symbol:      "JK",
 				Description: "EVM, staking and governance denom of Evmos",
 				DenomUnits: []*banktypes.DenomUnit{
 					{
@@ -130,7 +130,7 @@ func TestEqualMetadata(t *testing.T) {
 				Base:        "ajk",
 				Display:     "evmos",
 				Name:        "Evmos",
-				Symbol:      "EVMOS",
+				Symbol:      "JK",
 				Description: "EVM, staking and governance denom of Evmos",
 				DenomUnits: []*banktypes.DenomUnit{
 					{
@@ -148,7 +148,7 @@ func TestEqualMetadata(t *testing.T) {
 				Base:        "ajk",
 				Display:     "evmos",
 				Name:        "Evmos",
-				Symbol:      "EVMOS",
+				Symbol:      "JK",
 				Description: "EVM, staking and governance denom of Evmos",
 				DenomUnits: []*banktypes.DenomUnit{
 					{
@@ -171,7 +171,7 @@ func TestEqualMetadata(t *testing.T) {
 				Base:        "ajk",
 				Display:     "evmos",
 				Name:        "Evmos",
-				Symbol:      "EVMOS",
+				Symbol:      "JK",
 				Description: "EVM, staking and governance denom of Evmos",
 				DenomUnits: []*banktypes.DenomUnit{
 					{

@@ -10,11 +10,11 @@ Learn about the the different types of tokens available in Evmos. {synopsis}
 
 Evmos is a Cosmos-based chain with full Ethereum Virtual Machine (EVM) support. Because of this [architecture](./../technical_concepts/architecture.md), tokens and assets in the network may come from different independent sources.
 
-## The EVMOS Token
+## The JK Token
 
-The denomination used for staking, governance and gas consumption on the EVM is the EVMOS. The EVMOS provides the utility of: securing the Proof-of-Stake chain, token used for governance proposals, distribution of fees to validator and users, and as a mean of gas for running smart contracts on the EVM.
+The denomination used for staking, governance and gas consumption on the EVM is the JK. The JK provides the utility of: securing the Proof-of-Stake chain, token used for governance proposals, distribution of fees to validator and users, and as a mean of gas for running smart contracts on the EVM.
 
-Evmos uses [Atto](https://en.wikipedia.org/wiki/Atto-) EVMOS as the base denomination to maintain parity with Ethereum.
+Evmos uses [Atto](https://en.wikipedia.org/wiki/Atto-) JK as the base denomination to maintain parity with Ethereum.
 
 1 evmos = 10<sup>18</sup> ajk
 

@@ -62,16 +62,16 @@ For community pool spend proposals, there are five components:
 1. **Title** - the distinguishing name of the proposal, typically the way the that explorers list proposals
 2. **Description** - the body of the proposal that further describes what is being proposed and details surrounding the proposal
 3. **Recipient** - the Evmos (bech32-based) address that will receive funding from the Community Pool
-4. **Amount** - the amount of funding that the recipient will receive in atto-EVMOS (`ajk`)
+4. **Amount** - the amount of funding that the recipient will receive in atto-JK (`ajk`)
 5. **Deposit** - the amount that will be contributed to the deposit (in `ajk`) from the account submitting the proposal
 
 #### Made-Up Example
 
-In this simple example (below), a network explorer will list the governance proposal as a `CommunityPoolSpendProposal`. When an observer selects the proposal, they'll see the description. Not all explorers will show the recipient and amount, so ensure that you verify that the description aligns with the what the governance proposal is programmed to enact. If the description says that a certain address will receive a certain number of EVMOS, it should also be programmed to do that, but it's possible that that's not the case (accidentally or otherwise).
+In this simple example (below), a network explorer will list the governance proposal as a `CommunityPoolSpendProposal`. When an observer selects the proposal, they'll see the description. Not all explorers will show the recipient and amount, so ensure that you verify that the description aligns with the what the governance proposal is programmed to enact. If the description says that a certain address will receive a certain number of JK, it should also be programmed to do that, but it's possible that that's not the case (accidentally or otherwise).
 
-The `amount` is `1000000000000000000ajk`. This is equal to 1 EVMOS, so `recipient` address `evmos1mx9nqk5agvlsvt2yc8259nwztmxq7zjq50mxkp` will receive 1 EVMOS if this proposal is passed.
+The `amount` is `1000000000000000000ajk`. This is equal to 1 JK, so `recipient` address `evmos1mx9nqk5agvlsvt2yc8259nwztmxq7zjq50mxkp` will receive 1 JK if this proposal is passed.
 
-The `deposit` of `192000000000000000000ajk` results in 192 EVMOS being used from the proposal submitter's account. A minimum deposit is required for a proposal to enter the voting period, and anyone may contribute to this deposit within 3 days. If the minimum deposit isn't reached before this time, the deposit amounts will be burned. Deposit amounts will also be burned if the quorum isn't met in the vote or the proposal is vetoed.
+The `deposit` of `192000000000000000000ajk` results in 192 JK being used from the proposal submitter's account. A minimum deposit is required for a proposal to enter the voting period, and anyone may contribute to this deposit within 3 days. If the minimum deposit isn't reached before this time, the deposit amounts will be burned. Deposit amounts will also be burned if the quorum isn't met in the vote or the proposal is vetoed.
 
 ```json
 {
@@ -127,7 +127,7 @@ For parameter-change proposals, there are seven components:
 3. **Subspace** - the Evmos module with the parameter that is being changed
 4. **Key** - the parameter that will be changed
 5. **Value** - the value of the parameter that will be changed by the governance mechanism
-6. **Denom** - `ajk` (atto-EVMOS) will be the type of asset used as the deposit
+6. **Denom** - `ajk` (atto-JK) will be the type of asset used as the deposit
 7. **Amount** - the amount that will be contributed to the deposit (in `ajk`) from the account submitting the proposal
 
 #### Real Example
@@ -158,7 +158,7 @@ Users can query the proposal details with the evmosd command-line interface usin
 }
 ```
 
-The deposit `denom` is `ajk` and `amount` is `20100000000000000000`. Therefore, a deposit of 20.1 EVMOS will be included with this proposal. At the time, the EVMOS mainnet had a 10 EVMOS minimum deposit, so this proposal was put directly into the voting period (and subsequently passed). The minimum deposit amount is currently 192 EVMOS. There is a minimum deposit required for a proposal to enter the voting period, and anyone may contribute to this deposit within a 3-day period. If the minimum deposit isn't reached before this time, the deposit amounts will be burned.
+The deposit `denom` is `ajk` and `amount` is `20100000000000000000`. Therefore, a deposit of 20.1 JK will be included with this proposal. At the time, the JK mainnet had a 10 JK minimum deposit, so this proposal was put directly into the voting period (and subsequently passed). The minimum deposit amount is currently 192 JK. There is a minimum deposit required for a proposal to enter the voting period, and anyone may contribute to this deposit within a 3-day period. If the minimum deposit isn't reached before this time, the deposit amounts will be burned.
 
 ## Sending the transaction that submits your governance proposal
 

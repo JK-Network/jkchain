@@ -12,7 +12,7 @@ Evmos is based on [Tendermint Core](https://github.com/tendermint/tendermint/blo
 
 Validator candidates can bond their own staking tokens and have the tokens "delegated", or staked, to them by token holders. The **{{ $themeConfig.project.denom }}** is Evmos's native token. At its onset, Evmos will launch with 150 validators. The validators are determined by who has the most stake delegated to them - the top 150 validator candidates with the most stake will become Evmos validators.
 
-Validators and their delegators will earn {{ $themeConfig.project.denom }} as block provisions and tokens as transaction fees through execution of the Tendermint consensus protocol. Initially, transaction fees will be paid in EVMOS but in the future, any token in the Cosmos ecosystem will be valid as fee tender if it is whitelisted by governance. Note that validators can set commission on the fees their delegators receive as additional incentive.
+Validators and their delegators will earn {{ $themeConfig.project.denom }} as block provisions and tokens as transaction fees through execution of the Tendermint consensus protocol. Initially, transaction fees will be paid in JK but in the future, any token in the Cosmos ecosystem will be valid as fee tender if it is whitelisted by governance. Note that validators can set commission on the fees their delegators receive as additional incentive.
 
 If validators double sign, are frequently offline or do not participate in governance, their staked {{ $themeConfig.project.denom }} (including {{ $themeConfig.project.denom }} of users that delegated to them) can be slashed. The penalty depends on the severity of the violation.
 
@@ -51,7 +51,7 @@ As the usage of the blockchain grows, the server requirements may increase as we
 Seek legal advice if you intend to run a validator.
 :::
 
-Set up a dedicated validator's website, social profile (eg: Twitter) and signal your intention to become a validator on Discord. This is important since users will want to have information about the entity they are staking their EVMOS to.
+Set up a dedicated validator's website, social profile (eg: Twitter) and signal your intention to become a validator on Discord. This is important since users will want to have information about the entity they are staking their JK to.
 
 ## Community
 

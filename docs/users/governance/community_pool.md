@@ -37,4 +37,4 @@ Funds from the Evmos Community Pool may be spent via successful governance propo
 
 ### How are funds disbursed after a community-spend proposal is passed?
 
-If a community-spend proposal passes successfully, the number of EVMOS encoded in the proposal will be transferred from the community pool to the address encoded in the proposal, and this will happen immediately after the voting period ends.
+If a community-spend proposal passes successfully, the number of JK encoded in the proposal will be transferred from the community pool to the address encoded in the proposal, and this will happen immediately after the voting period ends.

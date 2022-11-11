@@ -20,7 +20,7 @@ The EVM hook updates the logs that keep track of much gas was used for interacti
 The Epoch hook triggers the distribution of usage rewards for all registered incentives at the end of each epoch (one day or one week). This distribution process first 1) allocates the rewards for each incentive from the allocation pool and then 2) distributes these rewards to all partticipants of each incentive.
 
 1. A `RegisterIncentiveProposal` passes and an `incentive` for the proposed contract is created.
-2. An `epoch` begins and `rewards` ($EVMOS and other denoms) that are minted on every block for inflation are added to the inflation pool every block.
+2. An `epoch` begins and `rewards` ($JK and other denoms) that are minted on every block for inflation are added to the inflation pool every block.
 3. Users submit transactions and call functions on the incentivized smart contracts to interact and gas gets logged through the EVM Hook.
 4. A block, which signalizes the end of an `epoch`, is proposed and the `DistributeIncentives` method is called through `AfterEpochEnd` hook. This method:
     1. Allocates the amount to be distributed from the inflation pool

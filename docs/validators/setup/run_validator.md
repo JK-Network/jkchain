@@ -17,7 +17,7 @@ If you plan to use a Key Management System (KMS), you should go through these st
 
 ## Create Your Validator
 
-Your node consensus public key (`evmosvalconspub...`) can be used to create a new validator by staking EVMOS tokens. You can find your validator pubkey by running:
+Your node consensus public key (`evmosvalconspub...`) can be used to create a new validator by staking JK tokens. You can find your validator pubkey by running:
 
 ```bash
 evmosd tendermint show-validator

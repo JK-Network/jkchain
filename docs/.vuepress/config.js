@@ -73,10 +73,10 @@ module.exports = {
     project: {
       name: "Evmos",
       denom: "Evmos",
-      ticker: "EVMOS",
+      ticker: "JK",
       binary: "evmosd",
       testnet_denom: "tEvmos",
-      testnet_ticker: "tEVMOS",
+      testnet_ticker: "tJK",
       rpc_url: "https://eth.bd.evmos.org:8545",
       rpc_url_testnet: "https://eth.bd.evmos.dev:8545",
       rpc_url_local: "http://localhost:8545/",

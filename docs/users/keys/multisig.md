@@ -73,7 +73,7 @@ evmosd keys show multi
   pubkeys: []
 ```
 
-Let's add 10 EVMOS to the multisig wallet:
+Let's add 10 JK to the multisig wallet:
 
 ```bash
 evmosd tx bank send \
@@ -88,7 +88,7 @@ evmosd tx bank send \
 
 ### Step 2: Create the multisig transaction
 
-We want to send 5 EVMOS from our multisig account to `evmos1rgjxswhuxhcrhmyxlval0qa70vxwvqn2e0srft`.
+We want to send 5 JK from our multisig account to `evmos1rgjxswhuxhcrhmyxlval0qa70vxwvqn2e0srft`.
 
 ```bash
 evmosd tx bank send \

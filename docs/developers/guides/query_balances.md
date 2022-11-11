@@ -21,7 +21,7 @@ This guide will cover the following query methods:
 Upon [installation](../../validators/quickstart/installation.md) and [configuration](../../validators/quickstart/binary.md) of the Evmos Daemon, developers can query account balances using `evmosd` with the following CLI command:
 
 ```bash
-$ evmosd query bank balances $EVMOSADDRESS --count-total=$COUNTTOTAL --height=$HEIGHT --output=$OUTPUT --node=$NODE
+$ evmosd query bank balances $JKADDRESS --count-total=$COUNTTOTAL --height=$HEIGHT --output=$OUTPUT --node=$NODE
 balances:
 - amount: "1000000000000000000"
   denom: ajk
@@ -34,7 +34,7 @@ pagination:
 
 where:
 
-- `$EVMOSADDRESS` is the Evmos address with balances of interest (eg. `evmos1...`).
+- `$JKADDRESS` is the Evmos address with balances of interest (eg. `evmos1...`).
 - (optional) `$COUNTTOTAL` counts the total number of records in all balances to query for.
 - (optional) `$HEIGHT` is the specific height to query state at (can error if node is pruning state).
 - (optional) `$OUTPUT` is the output format (eg. `text`).
@@ -99,7 +99,7 @@ Developers can use [`grpcurl`](https://github.com/fullstorydev/grpcurl) with the
 
 ```bash
 # Request
-grpcurl $OUTPUT -d '{"address":`$EVMOSADDRESS`}' $NODE cosmos.bank.v1beta1.Query/AllBalances
+grpcurl $OUTPUT -d '{"address":`$JKADDRESS`}' $NODE cosmos.bank.v1beta1.Query/AllBalances
 
 # Result
 {
@@ -117,7 +117,7 @@ grpcurl $OUTPUT -d '{"address":`$EVMOSADDRESS`}' $NODE cosmos.bank.v1beta1.Query
 
 where:
 
-- `$EVMOSADDRESS` is the Evmos address with balances of interest (eg. `"evmos1..."`).
+- `$JKADDRESS` is the Evmos address with balances of interest (eg. `"evmos1..."`).
 - `$NODE` is the Cosmos gRPC node information is requested from (eg. `https://grpc.bd.evmos.org:9090`).
 - (optional) `$OUTPUT` is the output format (eg. `plaintext`).
 

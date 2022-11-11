@@ -148,7 +148,7 @@ This step should be done automatically by the same service that generated the me
 ### Known issues
 
 - The denomination displayed as `ETH` when importing the wallet because we are using the Ethereum app.
-- If you have Metamask correctly configured, the balance on the extension will be displayed as `EVMOS`, but on the Ledger device it will be displayed as `ETH`.
+- If you have Metamask correctly configured, the balance on the extension will be displayed as `JK`, but on the Ledger device it will be displayed as `ETH`.
 
 ::: warning
 **IMPORTANT:** Make sure you are on the correct network before signing any transaction!
