@@ -72,7 +72,7 @@ To [submit the proposal](../../users/governance/submitting.md) to testnet throug
 evmosd tx gov submit-proposal register-erc20 ERC20_ADDRESS...\
   --title=<title> \
   --description=<description> \
-  --deposit="1000000aevmos" \
+  --deposit="1000000ajk" \
   --from=<mykey> \
   --chain-id=<testnet_chain_id> \
   --node <address>

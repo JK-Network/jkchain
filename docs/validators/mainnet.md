@@ -129,7 +129,7 @@ For more details on how to run your validator, follow the validator [these](./se
 
 ```bash
 evmosd tx staking create-validator \
-  --amount=1000000000000aevmos \
+  --amount=1000000000000ajk \
   --pubkey=$(evmosd tendermint show-validator) \
   --moniker="EvmosWhale" \
   --chain-id=<chain_id> \
@@ -138,7 +138,7 @@ evmosd tx staking create-validator \
   --commission-max-change-rate="0.01" \
   --min-self-delegation="1000000" \
   --gas="auto" \
-  --gas-prices="0.025aevmos" \
+  --gas-prices="0.025ajk" \
   --from=<key_name>
 ```
 

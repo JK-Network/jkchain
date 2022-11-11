@@ -54,7 +54,7 @@ Any participant in the network can signal their intent to become a validator by 
 ```bash
 evmosd tx staking create-validator
     --pubkey evmosvalconspub1zcjduepqs5s0vddx5m65h5ntjzwd0x8g3245rgrytpds4ds7vdtlwx06mcesmnkzly
-    --amount "2aevmos"
+    --amount "2ajk"
     --from tmp
     --commission-rate="0.20"
     --commission-max-rate="1.00"

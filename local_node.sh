@@ -40,12 +40,12 @@ done
 # Set moniker and chain-id for Evmos (Moniker can be anything, chain-id must be an integer)
 evmosd init $MONIKER -o --chain-id $CHAINID --home $HOMEDIR
 
-# Change parameter token denominations to aevmos
-cat $GENESIS | jq '.app_state["staking"]["params"]["bond_denom"]="aevmos"' > $TMP_GENESIS && mv $TMP_GENESIS $GENESIS
-cat $GENESIS | jq '.app_state["crisis"]["constant_fee"]["denom"]="aevmos"' > $TMP_GENESIS && mv $TMP_GENESIS $GENESIS
-cat $GENESIS | jq '.app_state["gov"]["deposit_params"]["min_deposit"][0]["denom"]="aevmos"' > $TMP_GENESIS && mv $TMP_GENESIS $GENESIS
-cat $GENESIS | jq '.app_state["evm"]["params"]["evm_denom"]="aevmos"' > $TMP_GENESIS && mv $TMP_GENESIS $GENESIS
-cat $GENESIS | jq '.app_state["inflation"]["params"]["mint_denom"]="aevmos"' > $TMP_GENESIS && mv $TMP_GENESIS $GENESIS
+# Change parameter token denominations to ajk
+cat $GENESIS | jq '.app_state["staking"]["params"]["bond_denom"]="ajk"' > $TMP_GENESIS && mv $TMP_GENESIS $GENESIS
+cat $GENESIS | jq '.app_state["crisis"]["constant_fee"]["denom"]="ajk"' > $TMP_GENESIS && mv $TMP_GENESIS $GENESIS
+cat $GENESIS | jq '.app_state["gov"]["deposit_params"]["min_deposit"][0]["denom"]="ajk"' > $TMP_GENESIS && mv $TMP_GENESIS $GENESIS
+cat $GENESIS | jq '.app_state["evm"]["params"]["evm_denom"]="ajk"' > $TMP_GENESIS && mv $TMP_GENESIS $GENESIS
+cat $GENESIS | jq '.app_state["inflation"]["params"]["mint_denom"]="ajk"' > $TMP_GENESIS && mv $TMP_GENESIS $GENESIS
 
 # Set gas limit in genesis
 cat $GENESIS | jq '.consensus_params["block"]["max_gas"]="10000000"' > $TMP_GENESIS && mv $TMP_GENESIS $GENESIS
@@ -66,7 +66,7 @@ cat $GENESIS | jq '.app_state["claims"]["params"]["duration_until_decay"]="10000
 
 # Claim module account:
 # 0xA61808Fe40fEb8B3433778BBC2ecECCAA47c8c47 || evmos15cvq3ljql6utxseh0zau9m8ve2j8erz89m5wkz
-cat $GENESIS | jq -r --arg amount_to_claim "$amount_to_claim" '.app_state["bank"]["balances"] += [{"address":"evmos15cvq3ljql6utxseh0zau9m8ve2j8erz89m5wkz","coins":[{"denom":"aevmos", "amount":$amount_to_claim}]}]' > $TMP_GENESIS && mv $TMP_GENESIS $GENESIS
+cat $GENESIS | jq -r --arg amount_to_claim "$amount_to_claim" '.app_state["bank"]["balances"] += [{"address":"evmos15cvq3ljql6utxseh0zau9m8ve2j8erz89m5wkz","coins":[{"denom":"ajk", "amount":$amount_to_claim}]}]' > $TMP_GENESIS && mv $TMP_GENESIS $GENESIS
 
 # disable produce empty block
 if [[ "$OSTYPE" == "darwin"* ]]; then
@@ -102,7 +102,7 @@ fi
 # Allocate genesis accounts (cosmos formatted addresses)
 for KEY in "${KEYS[@]}"
 do
-  evmosd add-genesis-account $KEY 100000000000000000000000000aevmos --keyring-backend $KEYRING --home $HOMEDIR
+  evmosd add-genesis-account $KEY 100000000000000000000000000ajk --keyring-backend $KEYRING --home $HOMEDIR
 done 
 
 # Update total supply with claim values
@@ -115,7 +115,7 @@ cat $GENESIS | jq -r --arg total_supply "$total_supply" '.app_state["bank"]["sup
 rm -rf $HOMEDIR/config/gentx
 
 # Sign genesis transaction
-evmosd gentx ${KEYS[0]} 1000000000000000000000aevmos --keyring-backend $KEYRING --chain-id $CHAINID --home $HOMEDIR
+evmosd gentx ${KEYS[0]} 1000000000000000000000ajk --keyring-backend $KEYRING --chain-id $CHAINID --home $HOMEDIR
 ## In case you want to create multiple validators at genesis
 ## 1. Back to `evmosd keys add` step, init more keys
 ## 2. Back to `evmosd add-genesis-account` step, add balance for those
@@ -134,4 +134,4 @@ if [[ $1 == "pending" ]]; then
 fi
 
 # Start the node (remove the --pruning=nothing flag if historical queries are not needed)
-evmosd start --pruning=nothing $TRACE --log_level $LOGLEVEL --minimum-gas-prices=0.0001aevmos --json-rpc.api eth,txpool,personal,net,debug,web3 --home $HOMEDIR
+evmosd start --pruning=nothing $TRACE --log_level $LOGLEVEL --minimum-gas-prices=0.0001ajk --json-rpc.api eth,txpool,personal,net,debug,web3 --home $HOMEDIR

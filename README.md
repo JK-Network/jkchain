@@ -4,8 +4,7 @@ parent:
 -->
 
 <div align="center">
-  <h1> Evmos </h1>
-</div>
+  <h1> JK-Chain (based on EVMOS) </h1> </div>
 
 <div align="center">
   <a href="https://github.com/evmos/evmos/releases/latest">
